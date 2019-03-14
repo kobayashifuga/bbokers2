@@ -2,7 +2,7 @@
 	<div class="col-lg-3">
 		<div class="form_create">
 		<h2>User info</h2>
-			<table class="table">
+			<table class="profile">
 				<%= attachment_image_tag @user, :profile_image, :fill, 100, 100, format: 'jpeg', class: "top-img pull-left profile-img", fallback: "no_image.jpg" %>
 				<tbody>
 					<div class="pro">
@@ -17,10 +17,9 @@
 				</tbody>
 			</table>
 			<% if @user.id == current_user.id %>
-			<%= link_to "設定" , edit_user_path(current_user.id), class: "col-lg-12 btn btn-default glyphicon glyphicon-wrench" %>
+			<%= link_to "" , edit_user_path(current_user.id), class: "col-lg-12 btn btn-default glyphicon glyphicon-wrench" %>
 			<%end%>
 		
-
 		<h2>New book</h2>
 		<% @book.errors.full_messages.each do |message| %>
     	<%= message %>

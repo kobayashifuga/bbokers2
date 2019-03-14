@@ -1,8 +1,9 @@
+<div class="container">
 <div class="row">
 	<%= render "users/list"%>
 	<div class="col-lg-9">
 		<h2>Users</h2>
-		<table class="table">
+		<table class="profile">
 			<thead>
 				<tr>
 					<th>image</th>
@@ -15,11 +16,12 @@
 				<tr>
 					<td><%= attachment_image_tag user, :profile_image, :fill, 60, 60, fallback: "no_image.jpg", class: "bookimage  img-circle pull-left profile-thumb" %></td>
 					<td><%= user.username %></td>
-					<td><%= link_to "Show", user_path(user.id), class: "user_#{user.id}" %></td>
+					<td><%= link_to "Show", user_path(user.id) %></td>
 				</tr>
 			</tbddy>
 			<%end%>
 		</table>
+	</div>
 	</div>
 </div>	
 

@@ -11,8 +11,8 @@
 		<label>Opinion</label><br>
 		<%= f.text_area :body, class: "book_body width" %><br>
 		<%= f.submit "Update Book", class: "btn btn-primary width"%><br>
-		<%= link_to "show",book_path(@book) %>
-		<%= link_to "Back",books_path,class: "back" %>
+		<%= link_to "show",book_path(@book),class: "btn btn-primary width" %>
+		<%= link_to "Back",books_path,class: "back",class: "btn btn-primary width" %>
 		<%end%>
 	</div>
 </div>
