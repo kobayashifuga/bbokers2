@@ -1,0 +1,110 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.img-circle{
+	border-radius:0;
+}
+*{
+	margin:0;
+	padding:0;
+}
+
+
+body{
+	width:100%;
+}
+
+
+.width{
+	width:80%;
+}
+.table{
+	width:20%;
+}
+.pro{
+    text-align: center;
+}
+.header{
+	background-color:#000;
+	height: 40px;
+	color:#fff;
+	margin: 0 ;
+	padding: 0 ;
+}
+
+.bookers{
+	padding:0 10px;
+	margin:0;
+	font-size:20px;
+	text-align:left;
+}
+.ul-top{
+	float:right;
+}
+.header ul li{
+	display: inline-block;
+	color:#fff;
+	margin : 0 5px;
+}
+.btn-top{
+	text-align:center;
+	margin:0;
+}
+.btn-top a{
+	color:#fff;
+}
+.btn-group-vertical{
+	width:80%;
+	margin: 0 auto;
+	text-align:center;
+}
+small{
+	float:right;
+}
+
+.before{
+	margin-top:10px;
+}
+
+.header a{
+	color: #FFF;
+	margin:0;
+	padding:0;
+	text-decoration: none;
+}
+.bookimage{
+	width:50px;
+	margin-right:0px
+	
+}
+.clear_fix{
+	clear:both;
+}
+.edit{
+	width:100%;
+	margin:30px;
+}
+
+.flash{
+	color:limegreen;
+	margin:10px 20px;
+}
+.form_create{
+	width:90%;
+	margin:20px;
+}

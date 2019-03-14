@@ -1,0 +1,19 @@
+<div class="body">
+<div class="row">
+	<div class="col-lg-9">
+		<h1>Editing Book</h1>
+		<% @book.errors.full_messages.each do |message| %>
+    	<%= message %>
+    	<%end%>
+		<%= form_for(@book) do |f|%>
+		<label>Title</label><br>
+		<%= f.text_field :title, class: "book_title width"%><br>
+		<label>Opinion</label><br>
+		<%= f.text_area :body, class: "book_body width" %><br>
+		<%= f.submit "Update Book", class: "btn btn-primary width"%><br>
+		<%= link_to "show",book_path(@book) %>
+		<%= link_to "Back",books_path,class: "back" %>
+		<%end%>
+	</div>
+</div>
+</div>
