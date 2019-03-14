@@ -16,12 +16,18 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-.img-circle{
+.clearfix::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.top-img{
 	border-radius:0;
 }
 *{
 	margin:0;
-	padding:0;
+
 }
 
 
@@ -41,7 +47,7 @@ body{
 }
 .header{
 	background-color:#000;
-	height: 40px;
+	height: 55px;
 	color:#fff;
 	margin: 0 ;
 	padding: 0 ;
@@ -53,7 +59,7 @@ body{
 	font-size:20px;
 	text-align:left;
 }
-.ul-top{
+.ul{
 	float:right;
 }
 .header ul li{
@@ -61,20 +67,16 @@ body{
 	color:#fff;
 	margin : 0 5px;
 }
-.btn-top{
+.btn{
 	text-align:center;
 	margin:0;
 }
-.btn-top a{
+.btn a{
 	color:#fff;
 }
-.btn-group-vertical{
-	width:80%;
-	margin: 0 auto;
-	text-align:center;
-}
-small{
-	float:right;
+
+.foot{
+	text-align: right;
 }
 
 .before{
