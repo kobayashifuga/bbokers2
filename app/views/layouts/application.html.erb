@@ -6,6 +6,7 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     
   </head>
 
@@ -21,7 +22,7 @@
           <li><%= link_to "Books", books_path, class: "glyphicon glyphicon-book books" %></li>
           
           <li><%= link_to "logout", destroy_user_session_path, method: :delete, class: "glyphicon glyphicon-log-out logout" %></li>
-          
+                              
         <% else %>
           <li><%= link_to "Home", root_path , class: "glyphicon glyphicon-home home" %></li>
           
