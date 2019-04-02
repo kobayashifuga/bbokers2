@@ -13,7 +13,7 @@
 				<td><%= @booker.title %></td>
 				<td><%= @booker.body%></td>
 				<% if @booker.user_id == current_user.id %>
-				<td><%= link_to  "Edit",edit_book_path(id: @booker.id) %></td>
+				<td><%= link_to  "Edit",edit_book_path(@booker.id) %></td>
 				<td><%= link_to "Destroy", book_path(@booker.id), method: :delete,"data-confirm" => "本当に削除しますか？", class: "destroy_book_#{@booker.id}" %>
 				</td>
 				<% end %>

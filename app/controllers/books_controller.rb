@@ -13,7 +13,6 @@ class BooksController < ApplicationController
      	redirect_to book_path(id: @book.id)
     else
       @user = current_user
-      @books = Book.all.order(created_at: :desc)
       render :index
     end
   end
@@ -26,7 +25,7 @@ class BooksController < ApplicationController
 
   def edit
   	@book = Book.find(params[:id])
-    if @book.user_id != current_user.id
+    if @user.id != current_user.id
       flash[:notice] = "can't successfully access!"
       redirect_to user_path(@book.user_id)
     end
